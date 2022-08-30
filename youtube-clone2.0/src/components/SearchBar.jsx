@@ -10,7 +10,7 @@ import { Search } from '@mui/icons-material';
 const SearchBar = () => {
   return (
     <Paper
-    componetn="form"
+    component="form"
     onSubmit={() => {}}
     sx={{ 
       borderRadius: 20,

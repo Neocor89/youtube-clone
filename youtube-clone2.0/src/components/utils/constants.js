@@ -13,10 +13,10 @@ import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 
-// :: YoutubeClone OfficialIcon ::
+// :: YoutubeClone Logo ::
 export const logo = 'https://i.ibb.co/s9Qys2j/logo.png';
 
-// :: YoutubeClone SideBar ::
+// :: YoutubeClone MUIcons ::
 export const categories = [
   { name: 'New', icon: <HomeIcon />, },
   { name: 'JS Mastery', icon: <CodeIcon />, },
@@ -37,6 +37,7 @@ export const categories = [
   { name: 'Crypto', icon: <DeveloperModeIcon />, },
 ];
 
+// :: YoutubeClone Data ::
 export const demoThumbnailUrl = 'https://i.ibb.co/G2L2Gwp/API-Course.png';
 export const demoChannelUrl = '/channel/UCmXmlB4-HJytD7wek0Uo97A';
 export const demoVideoUrl = '/video/GDa8kZLNhJ4';
