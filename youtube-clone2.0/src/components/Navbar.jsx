@@ -1,5 +1,6 @@
 import { Stack } from '@mui/material';
 import { Link } from 'react-router-dom';
+import SearchBar from './SearchBar';
 
 //:: Data Import ::
 import { logo } from './utils/constants';
@@ -15,7 +16,7 @@ const Navbar = () => {
       <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
         <img src={logo} alt="Logo YoutubeClone" height={45}/>
       </Link>
-
+      <SearchBar />
     </Stack>
   )
 }

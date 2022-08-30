@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// ::: MUI Imports :::
+// ::: Responsive MUI Imports :::
 import { Box } from "@mui/material";
 
 //::: Imports AllComponents :::

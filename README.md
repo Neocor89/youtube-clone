@@ -48,9 +48,22 @@ npm install --legacy-peer-deps
 ```
 npm run start
 ```
-<!-- ### `file and folder configuration`
+ ### `file and folder configuration`
 
 After the app is launched <span style="color: #f08080">delete the current src folder</span>,
-then <span style="color: #06d6a0">create a new src folder</span> -->
+then <span style="color: #06d6a0">create a new src folder</span> 
+
+
+### Imports All Components
+
+Create an index.js file in the components folder and store all created components
+
+```jsx
+export { default as Navbar } from "./Navbar";
+export { default as Feed } from "./Feed";
+export { default as ChannelDetail } from "./ChannelDetail";
+export { default as VideoDetail } from "./VideoDetail";
+export { default as SearchFeed } from "./SearchFeed";
+```
  
 
