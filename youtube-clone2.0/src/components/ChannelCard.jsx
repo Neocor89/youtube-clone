@@ -6,7 +6,7 @@ import { demoProfilePicture } from "./utils/constants";
 // const { REACT_APP_RAPID_API_KEY } = process.env;
 // console.log(process.env);
 
-const ChannelCard = ({ channelDetail }) => (
+const ChannelCard = ({ channelDetail, marginTop }) => (
   <Box
     sx={{
       boxShadow: 'none',
@@ -16,7 +16,8 @@ const ChannelCard = ({ channelDetail }) => (
       alignItems: 'center',
       width: { xs: '356px', md: '320px'},
       height: '326px',
-      margin: 'auto'
+      margin: 'auto',
+      marginTop,
     }}
   >
     <Link to={`/channel/${channelDetail?.id?.channelId}`} >
@@ -24,11 +25,11 @@ const ChannelCard = ({ channelDetail }) => (
         <CardMedia
           image={channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture}
           alt={channelDetail?.snippet?.title}
-          sx={{ borderRadius: '50%', height: '180px', width: '180px', mb: 2, border: '1px solid #e3e3e3' }}
+          sx={{ borderRadius: '50%', height: '180px', width: '180px', mb: 2, border: '1px solid #e3e3e3', ml: 2}}
         />
         <Typography variant="h6">
           {channelDetail?.snippet?.title}
-          <CheckCircleIcon sx={{ fontSize: 15, color: 'gray', ml: '5px' }} />
+          <CheckCircleIcon sx={{ fontSize: 14, color: 'gray', ml: '5px' }} />
         </Typography>
         {channelDetail?.statistics?.subscriberCount && (
           <Typography>
@@ -40,5 +41,5 @@ const ChannelCard = ({ channelDetail }) => (
   </Box>
 )
 
-
+//:: CardMedia in sx={{ ** }} adding ml: 2 for center image and text
 export default ChannelCard

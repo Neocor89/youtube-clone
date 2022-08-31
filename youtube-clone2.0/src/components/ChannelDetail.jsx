@@ -7,7 +7,7 @@ import { fetchFromAPI } from './utils/fetchFromAPI';
 
 const ChannelDetail = () => {
   const [channelDetail, setChannelDetail] = useState(null)
-  const [videos, setVideos] = useState([]) 
+  const [videos, setVideos] = useState([])
 
   const { id } = useParams();
 
@@ -16,14 +16,27 @@ const ChannelDetail = () => {
   useEffect(() => {
     fetchFromAPI(`channels?part=snippet&id=${id}`)
       .then((data) => setChannelDetail(data?.items[0]));
-      //: &order=date
-      fetchFromAPI(`search?channelId=${id}&part=snippet&order=date`)
+    //: &order=date
+    fetchFromAPI(`search?channelId=${id}&part=snippet&order=date`)
       .then((data) => setVideos(data?.items));
   }, [id]);
 
-
   return (
-    <div>{id}</div>
+    <Box minHeight='95vh'>
+      <Box>
+        <div style={{
+          backgroundImage: 'linear-gradient(335deg, rgb(115,244,172),rgb(143,85,234))',
+          zIndex: 10,
+          height: '300px'
+        }}
+        />
+        <ChannelCard channelDetail={channelDetail} marginTop='-110px' />
+      </Box>
+      <Box display='flex' p='2'>
+        <Box sx={{ mr: { sm: '100px' } }} />
+          <Videos videos={videos} />
+      </Box>
+    </Box>
   )
 }
 

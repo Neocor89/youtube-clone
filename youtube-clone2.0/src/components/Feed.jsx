@@ -6,7 +6,6 @@ import { fetchFromAPI } from './utils/fetchFromAPI';
 import { SideBar, Videos } from './';
 
 const Feed = () => {
-
   const [selectedCategory, setSelectedCategory] = useState('New');
   const [videos, setVideos] = useState([]);
 
@@ -20,7 +19,8 @@ const Feed = () => {
     <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
       <Box sx={{ height: { sx: 'auto', md: '92vh' }, borderRight: '1px solid #3d3d3d', px: { sx: 0, md: 2 } }}>
         <SideBar
-          selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}
+          selectedCategory={selectedCategory} 
+          setSelectedCategory={setSelectedCategory}
         />
 
         <Typography className="copyright" variant="body2" sx={{ mt: 1.5, color: '#fff' }}>
@@ -41,24 +41,5 @@ const Feed = () => {
     </Stack>
   )
 }
-
-/**
- * * Information *
- *::  React.EffectCallback 
- *:: Are executed after each completed rendering
- *
- * + Repeat Template
- * 
- *:: style={{}}
- *:: overflowY: 'auto',
- * :: height: { sx: 'auto', md: '95%' },
- *:: sx={{}}
- *:: { sx: '', md: '' },
- *:: flexDirection:
- *:: marginRight:
- *:: className=''
- *:: variant=""
- *:: color=""
- */
 
 export default Feed
