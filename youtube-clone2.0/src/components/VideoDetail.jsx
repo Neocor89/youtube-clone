@@ -17,7 +17,6 @@ const VideoDetail = () => {
 
   const [videoDetail, setVideoDetail] = useState(null);
   const [videos, setVideos] = useState(null);
-
   const { id } = useParams();
 
   useEffect(() => {
