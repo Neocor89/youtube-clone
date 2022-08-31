@@ -1,13 +1,22 @@
 # youtube-clone Rapid API
 ![YouTube](https://img.shields.io/badge/YouTube-clone-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)
 
-### web app built using 👷
+### web app built using
 
 <div style="display: flex; align-items: center; margin: 20px 0">
 <img src="https://bitsrc.imgix.net/3b69976526d31a20a1fd238f5a32a704cf437dd6.png" style="width: 45px; height: 35px; margin-left: 20px" alt="image material UI"/>
 <img src="https://avatars1.githubusercontent.com/u/14069567?s=280&v=4" style="width: 45px; height: 45px; margin-left: 20px;" alt="image material UI"/>
 <img src="https://daviseford.com/blog/public/img/thumbnails/misc/react-logo.png" style="width: 45px; height: 45px; margin-left: 20px; object-fit: cover;" alt="image material UI"/>
 </div>
+
+### **main page rendering** ⭐
+
+---
+
+
+
+
+<img src='Readme-assets\image-youtube-clone2.0.png'/>
 
 ## **SETUP**
 ---
@@ -37,7 +46,7 @@ After initializing your project, copy these dependencies to your vscode terminal
 
 ### `Durability application`
 
-after copying the dependencies, run the command :
+After copying the dependencies, run the command :
 
 ```node
 npm install --legacy-peer-deps
@@ -48,20 +57,53 @@ npm install --legacy-peer-deps
 ```
 npm run start
 ```
- ### `file and folder configuration`
+ ### `Organizing file components`
 
-After the app is launched <span style="color: #f08080">delete the current src folder</span>,
-then <span style="color: #06d6a0">create a new src folder</span> 
+### Centralization of imported components  😎
 
-
-### Imports All Components
-
-Create an index.js file in the components folder and store all created components
+Create an index.js file in the **components** folder and store all created components
 
 ```jsx
 export { default as Navbar } from "./Navbar";
-export { default as Feed } from "./Feed";
 export { default as ChannelDetail } from "./ChannelDetail";
 export { default as VideoDetail } from "./VideoDetail";
-export { default as SearchFeed } from "./SearchFeed";
+...
+```
+accessing files from components
+
+```jsx
+import { Videos } from './';
+```
+---
+
+## **API**  🖥️🔛🐙
+
+
+### Using the public API 
+**Youtube v3** from the Rapid API hub
+
+`Create by` : [ytdlfree](https://rapidapi.com/user/ytdlfree) 🧑‍💻
+
+For more information check [Rapid-API website](https://rapidapi.com/)
+
+To use the API, extract the url in the interface, then retrieve your key and protect it in an **.env** file.
+
+---
+## **Deployment 🕺**
+
+
+To deploy your application you can choose Netifly With [Netifly ⚡](https://app.netlify.com/) 
+
+- Create an account on netifly and then head to the `sites` tab
+
+- Create a file in your public folder named `_redirects`
+
+```
+public/_redirects
+```
+
+- And add this line to your file
+
+```
+/* /index.html 200
 ```
