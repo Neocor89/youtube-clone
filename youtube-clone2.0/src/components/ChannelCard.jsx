@@ -39,5 +39,6 @@ const ChannelCard = ({ channelDetail, marginTop }) => (
   </Box>
 )
 
+//: Check problem variant
 //:: CardMedia in sx={{ ** }} adding ml: 2 for center image and text
 export default ChannelCard
