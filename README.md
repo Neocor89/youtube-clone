@@ -1,4 +1,5 @@
 # youtube-clone Rapid API
+
 ![YouTube](https://img.shields.io/badge/YouTube-clone-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)
 
 ### web app built using
@@ -11,19 +12,19 @@
 
 ### **main page rendering** ⭐
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9edefb29-2943-4f97-967f-7375afdc5eca/deploy-status)](https://app.netlify.com/sites/darling-bubblegum-a5b321/deploys)
+
 ---
-
-
-
 
 <img src='Readme-assets\image-youtube-clone2.0.png'/>
 
 ## **SETUP**
+
 ---
+
 ### `vscode extension`
 
 Download the vscode Rapid API extension and create account in [RapidAPI](https://rapidapi.com/)
-
 
 ### `Dependencies`
 
@@ -57,9 +58,10 @@ npm install --legacy-peer-deps
 ```
 npm run start
 ```
- ### `Organizing file components`
 
-### Centralization of imported components  😎
+### `Organizing file components`
+
+### Centralization of imported components 😎
 
 Create an index.js file in the **components** folder and store all created components
 
@@ -69,17 +71,19 @@ export { default as ChannelDetail } from "./ChannelDetail";
 export { default as VideoDetail } from "./VideoDetail";
 ...
 ```
+
 accessing files from components
 
 ```jsx
-import { Videos } from './';
+import { Videos } from "./";
 ```
+
 ---
 
-## **API**  🖥️🔛🐙
+## **API** 🖥️🔛🐙
 
+### Using the public API
 
-### Using the public API 
 **Youtube v3** from the Rapid API hub
 
 `Create by` : [ytdlfree](https://rapidapi.com/user/ytdlfree) 🧑‍💻
@@ -89,10 +93,10 @@ For more information check [Rapid-API website](https://rapidapi.com/)
 To use the API, extract the url in the interface, then retrieve your key and protect it in an **.env** file.
 
 ---
+
 ## **Deployment 🕺**
 
-
-To deploy your application you can choose Netifly With [Netifly ⚡](https://app.netlify.com/) 
+To deploy your application you can choose Netifly With [Netifly ⚡](https://app.netlify.com/)
 
 - Create an account on netifly and then head to the `sites` tab
 
