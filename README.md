@@ -26,7 +26,7 @@ By clicking on the link below you will be redirected to the QR code of the proje
 
 <img src="https://res.cloudinary.com/dwoifuutn/image/upload/v1682453848/image-projects_kidtyy.png" style="width: 290px;" />
 
-`Project` : [Youtube](https:twitter.com)
+`Project` : <a href="https:bendevweb-youtube-clone.netlify.app">Demo</a>
 
 ## **SETUP**
 
