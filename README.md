@@ -12,11 +12,21 @@
 
 ### **main page rendering** ⭐
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9edefb29-2943-4f97-967f-7375afdc5eca/deploy-status)](https://app.netlify.com/sites/darling-bubblegum-a5b321/deploys)
+---
+
+<img src='Readme-assets\image-youtube-clone2.0.png' style="width: 600px"/>
+
+### **Discover the project 😎**
 
 ---
 
-<img src='Readme-assets\image-youtube-clone2.0.png'/>
+By clicking on the link below you will be redirected to the QR code of the project, scan it to enjoy the project live
+
+<div style="margin-top: 20px;"></div>
+
+<a href="https:bendevweb-youtube-clone.netlify.app">
+<img src="https://res.cloudinary.com/dwoifuutn/image/upload/v1682453848/image-projects_kidtyy.png" style="width: 290px;" />
+</a>
 
 ## **SETUP**
 
