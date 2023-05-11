@@ -1,4 +1,6 @@
-//:: Export AllComponents ::
+/* -----------------------------------------
+:: optimization for export All-Components :: 
+----------------------------------------- */
 
 export { default as Navbar } from "./Navbar";
 export { default as Feed } from "./Feed";

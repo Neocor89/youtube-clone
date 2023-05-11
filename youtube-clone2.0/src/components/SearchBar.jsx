@@ -32,7 +32,12 @@ const SearchBar = () => {
         border: '1px solid #e3e3e3',
         pl: 2,
         boxShadow: 'none',
-        mr: { sm: 5 }
+        mr: { sm: 5},
+        width: { xs: '215px', md: "500px" },
+        display: { xs: 'flex' },
+        justifyContent: 'space-between',
+        marginLeft: { xs: 2 },
+        
       }}
     >
       <input
@@ -41,7 +46,7 @@ const SearchBar = () => {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <IconButton type="submit" sx={{ p: '10px', color: 'red' }}>
+      <IconButton type="submit" sx={{ p: '10px', color: 'red', height: { xs: '30px', md: "40px" } }}>
         <Search />
       </IconButton>
     </Paper>
